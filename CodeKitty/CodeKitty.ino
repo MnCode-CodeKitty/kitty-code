@@ -43,7 +43,7 @@ void setup()
 // PUT CODE HERE TO HAVE IT RUN REPEATEDLY
 void loop()
 {
-
+  kittyRisingBeep();
 }
 
 // ###################################################################################################
@@ -57,6 +57,7 @@ void kittyForward(int mvDelay)
   rightServo.writeMicroseconds(KITTYLSPEED);
   leftServo.writeMicroseconds(KITTYRSPEED);
   delay(mvDelay);
+  kittyStop();
 }
 
 // Drive Right
@@ -65,6 +66,7 @@ void kittyRight(int mvDelay)
   // Motor A Forward
   rightServo.writeMicroseconds(KITTYRSPEED);
   delay(mvDelay);
+  kittyStop();
 }
 
 // Drive Left
@@ -72,6 +74,7 @@ void kittyLeft(int mvDelay)
 {
   leftServo.writeMicroseconds(KITTYLSPEED);
   delay(mvDelay);
+  kittyStop();
 }
 
 // Stop
