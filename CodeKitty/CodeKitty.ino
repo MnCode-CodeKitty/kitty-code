@@ -54,6 +54,15 @@ void loop()
 // Drive Forward
 void kittyForward(int mvDelay)
 {
+  rightServo.writeMicroseconds(KITTYRSPEED);
+  leftServo.writeMicroseconds(KITTYLSPEED);
+  delay(mvDelay);
+  kittyStop();
+}
+
+// Drive Backwards
+void kittyReverse(int mvDelay)
+{
   rightServo.writeMicroseconds(KITTYLSPEED);
   leftServo.writeMicroseconds(KITTYRSPEED);
   delay(mvDelay);
