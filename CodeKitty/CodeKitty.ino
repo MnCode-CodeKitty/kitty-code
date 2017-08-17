@@ -5,8 +5,8 @@
 
 #define LSERVO 9
 #define RSERVO 10
-#define TAIL 13
-#define SOUND A0
+#define TAIL 6
+#define SOUND 3
 
 // Declare variables needed for Code Kitty hardware
 
@@ -33,7 +33,7 @@ void setup()
   rightServo.attach(RSERVO);
 
   kittyTailBlink(1);
-  kittyForward(500);
+  kittyForward(3000);
   kittyBeep();
   kittyNote(NOTE_E5);
   kittyRisingBeep();
@@ -43,7 +43,7 @@ void setup()
 // PUT CODE HERE TO HAVE IT RUN REPEATEDLY
 void loop()
 {
-  kittyRisingBeep();
+   kittyForward(3000)
 }
 
 // ###################################################################################################
