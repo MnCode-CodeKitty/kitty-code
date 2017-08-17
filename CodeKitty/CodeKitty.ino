@@ -32,18 +32,13 @@ void setup()
   leftServo.attach(LSERVO);
   rightServo.attach(RSERVO);
 
-  kittyTailBlink(1);
-  kittyForward(3000);
-  kittyBeep();
-  kittyNote(NOTE_E5);
   kittyRisingBeep();
-  kittyMelody();
 }
 
 // PUT CODE HERE TO HAVE IT RUN REPEATEDLY
 void loop()
 {
-   kittyForward(3000)
+
 }
 
 // ###################################################################################################
