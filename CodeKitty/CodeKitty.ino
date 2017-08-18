@@ -104,7 +104,7 @@ void kittyTailOn()
 // LED “off” function
 void kittyTailOff()
 {
-  digitalWrite(TAIL, HIGH);
+  digitalWrite(TAIL, LOW);
 }
 
 // LED “blink” function
