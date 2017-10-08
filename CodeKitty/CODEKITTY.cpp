@@ -5,8 +5,8 @@
 #define TAIL 6
 #define SOUND 3
 
-const int lSpeed = 3000;
-const int rSpeed = 0;
+const int lSpeed = 0;
+const int rSpeed = 3000;
 const int kittyStop = 1500;
 
 //<<constructor>> setup the servos, speaker, and LED.  set pins to Output
