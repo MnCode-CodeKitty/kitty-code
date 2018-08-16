@@ -7,17 +7,11 @@ print("Code Kitty v2.2 Ready!")
 beep()
 
 def randTurn():
-    td=randint(1,4)
+    td=randint(1,2)
     if(td==1):
-        print("[CK] LEFT(45)") 
-        left(45)
-    elif(td==2):
         print("[CK] LEFT(90)") 
         left(90)
-    elif(td==3):
-        print("[CK] RIGHT(45)") 
-        right(45)
-    elif(td==4):
+    elif(td==2):
         print("[CK] RIGHT(90)") 
         right(90)
 
@@ -36,18 +30,18 @@ while True:
             stop()
             sleep(2)
             print("[CK] BACK")
-            back(1,"slow")
+            led("blue")
+            back(.5,"slow")
             sleep(2)
             randTurn()
             turns += 1
             sleep(2)
-            led("blue")
             if(turns==3):
                 led("yellow")
                 print("[CK] Frustration level 3!")
                 note("D3",2)
-                print("[CK] Turning around.")
-                stop()
+                print("[CK] Getting out of here!")
+                back(1)
                 sleep(1)
                 left(90)
                 sleep(1)
@@ -56,7 +50,7 @@ while True:
         else:
             print("[CK] GO")
             led("green")
-            go(1,"slow")
+            go(.375,"slow")
             sleep(1)
             turns=0
     note("E5",8)
